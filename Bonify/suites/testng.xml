@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bonify Test Suite" parallel="classes" thread-count="2">
+    <listeners>
+        <listener class-name="listeners.RetryListener"/>
+    </listeners>
+    <test name="Registration Test">
+        <classes>
+            <class name="tests.RegistrationTest"/>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
